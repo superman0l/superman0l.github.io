@@ -7,7 +7,7 @@
 - 明明没什么好写的
 - 但还是凑字数写了
 
-[GitHub](https://github.com)
+[GitHub](https://github.com/superman0l/superman0l.github.io)
 [Get Started](#这是标题)
 [点了也没用]()
 
