@@ -87,3 +87,39 @@ dict2={'W':'限定','水陈':'批脸'}
 `if a is b`
 `if a is not b`
 判断两个变量引用对象是否为同一个内存空间，感觉暂时用不上
+## while语句
+```
+a=5
+while a>=1:
+    a-=1
+    print a
+else:
+    print("now a = 0")
+```
+while-else结构
+## for语句
+```
+rwby=['ruby','weiss','yang','blake']
+for name in rwby:
+    print(name)
+else: print("There are 4 kawaii girls")
+
+for id in range(4):
+    print(rwby[i])
+else: print("There are 4 kawaii girls")
+```
+以上两个for-else都是用for遍历，其中else语句当for正常循环结束之后执行
+输出皆为
+```
+ruby
+weiss
+yang
+blake
+There are 4 kawaii girls
+```
+## pass语句
+```
+def function():
+    pass
+```
+pass什么用都没有，只是一个占位空语句，因为函数如果为空会报错所以用pass占位
