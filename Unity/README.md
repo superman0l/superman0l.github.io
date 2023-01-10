@@ -14,6 +14,13 @@ Animator（动画管理器，用于进行各个动画的衔接）<br>
 
 ### Script相关：
 
-对于Script的类中的声明<br>
-用public的声明可以使参数在unity的面板右侧
+对于Script的类中变量的声明<br>
+用public的声明可以使参数出现在unity的面板右侧，可以在游戏运行时通过观察右侧面板的数值进行debug，也可以手动更改，方便进行数值大小的调试<br>
+用public static的声明可以让其他类的函数(其他脚本)对该变量进行更改，如不同的场景对角色产生的不同影响，表示影响的变量可以用public static声明<br>
+直接声明类型的变量则是该类中直接私有的变量，一般用于函数内部计算<br>
+
+对于游戏中对象的获取
+'GameObject.Find(String "Object_name")'用来直接获取游戏对象
+'GameObject.Find(String "Object_name").GetComponent<Rigidbody>'用来获取该游戏对象的刚体组件
+
 </p>
