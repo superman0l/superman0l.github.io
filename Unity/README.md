@@ -20,7 +20,7 @@ Animator（动画管理器，用于进行各个动画的衔接）<br>
 直接声明类型的变量则是该类中直接私有的变量，一般用于函数内部计算<br>
 
 对于游戏中对象的获取
-'GameObject.Find(String "Object_name")'用来直接获取游戏对象
-'GameObject.Find(String "Object_name").GetComponent<Rigidbody>'用来获取该游戏对象的刚体组件
+`GameObject.Find(String "Object_name")`用来直接获取游戏对象
+`GameObject.Find(String "Object_name").GetComponent<Rigidbody>`用来获取该游戏对象的刚体组件,以此类推
 
 </p>
