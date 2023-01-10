@@ -123,3 +123,30 @@ def function():
     pass
 ```
 pass什么用都没有，只是一个占位空语句，因为函数如果为空会报错所以用pass占位
+## 关于时间
+`import time`引入time模块
+`ticks=time.time()`获取当前时间戳
+`localtime=time.localtime(time.time())`将当前时间戳向时间元组转换
+`localtime=time.asctime(time.localtime(time.time()))`将时间元组转换为最简单易读时间模式
+`import calendar`引入calendar模块
+`cal=calendar.month(2016,1)`该返回值为2016年1月份的日历
+还有好多 要用的时候再说吧
+## 函数
+```
+def print_2(str):
+    print str*2
+    return
+```
+函数定义
+`print_2(str="cpp")`可以酱紫调用
+```
+def nprint(str,n):
+    for i in range(n):
+        print(str),
+    return
+nprint(n=3,str="java")
+```
+### 不定长参数
+感觉用不到 先不写了
+### 匿名函数
+`sum = lambda a,b:a+b` 则sum(a,b)与a+b相同，没太看懂有啥用
