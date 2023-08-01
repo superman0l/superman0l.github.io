@@ -190,7 +190,7 @@ So in rotation there is $$R_{-\Theta}=R_{\Theta}^{-1}=R_{\Theta}^T$$  (正交矩
 
 - Perspective projection 透视投影
 
-  ![](C:\Users\WIN10\AppData\Roaming\Typora\typora-user-images\image-20230712181752771.png)
+  ![](../Games101/IMAGE/2-1.png)
 
 ### Rotation around x-, y-, or z-axis
 
@@ -308,7 +308,7 @@ In general, we map a cuboid [l ,r]×[b, t]×[f, n] to the "canonical" cube $$[-1
 
 - "squish" the frustum into a cuboid 把远端画面挤压到立方体大小后使用正交投影
 
-  ![](C:\Users\WIN10\AppData\Roaming\Typora\typora-user-images\image-20230712193119357.png)
+  ![](../Games101/IMAGE/2-2.png)
 
 $$
 \begin{bmatrix}
