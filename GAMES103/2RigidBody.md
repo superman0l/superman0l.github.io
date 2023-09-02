@@ -112,6 +112,12 @@ $$
 
 ![image](IMAGE/2-14.png)
 
+这里需要向量叉乘转矩阵
+$$
+\bold r \cross \bold q = 
+\begin{bmatrix}0&-r_z&r_y\\r_z&0&-r_x\\-r_y&r_x&0 \end{bmatrix}
+\begin{bmatrix}q_x\\q_y\\q_z\end{bmatrix}=\bold r^*\bold q
+$$
 ![image](IMAGE/2-15.PNG)
 
 思路：根据impulse方法计算$s_i$顶点的速度变换，之后根据结论算出物体整体受到的冲量，再根据冲量计算整个物体的运动情况
