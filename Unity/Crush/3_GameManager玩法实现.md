@@ -165,7 +165,7 @@ private bool CheckMatch(){
     }
     return isMatch;
 }
-//优化后
+//优化了个几把 不能跑
 private bool CheckMatch(){
     bool isMatch = false;
     for (int rowIndex = 0; rowIndex < GlobalDef.ROW_COUNT; ++rowIndex){

@@ -1,6 +1,4 @@
 * [Unity相关](Unity/)
-* [Python相关](Python/)
-* [Easyx相关](Easyx/)
 * [GAMES101](GAMES101/)
 * [GAMES103](GAMES103/)
 * [CPP面经](CPP/)
