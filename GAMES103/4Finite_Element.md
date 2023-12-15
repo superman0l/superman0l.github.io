@@ -2,11 +2,11 @@
 
 #### Linear Finite Element Method (FEM)
 
-![image](IMAGE/4-1.PNG)
+![image](IMAGE/4-1.png)
 
 $\bold F$表示相对位置变化，$c$表示三角形质心变化，该项计算中将三角形质心平移项去除了，但没有去除旋转项
 
-![image](IMAGE/4-2.PNG)
+![image](IMAGE/4-2.png)
 
 根据转置消去 Rotation $\bold R(\bold U)$，Green strain表示形变拉伸的量
 
@@ -14,7 +14,7 @@ $\bold F$表示相对位置变化，$c$表示三角形质心变化，该项计�
 
 能量->力->Hessian
 
-![image](IMAGE/4-3.PNG)
+![image](IMAGE/4-3.png)
 
 作业使用模型：StVK, trace(G),矩阵G的迹，S为能量密度对形变拉伸量求导结果
 $$
@@ -23,7 +23,7 @@ $$
 $$
 $\frac{\part W}{\part \epsilon_{uu}}$ 等已知，求 $\frac{\part \epsilon_{uu}}{\part \bold x_i}$, 根据先前计算的$G = \frac{1}{2}(F^TF-I)$求导得到
 
-<img src="IMAGE/4-4.PNG" alt="image" style="zoom: 50%;" /> 矩阵 很奇妙吧
+<img src="IMAGE/4-4.png" alt="image" style="zoom: 50%;" /> 矩阵 很奇妙吧
 $$
 \bold f_1 = -A^{ref}FS\begin{bmatrix}a\\b\end{bmatrix}\\
 \bold f_2 = -A^{ref}FS\begin{bmatrix}c\\d\end{bmatrix}\\
@@ -32,24 +32,24 @@ $$
 
 #### The Finite Volume Method (FVM)
 
-![image](IMAGE/4-5.PNG)
+![image](IMAGE/4-5.png)
 
-![IMAGE](IMAGE/4-6.PNG)
+![IMAGE](IMAGE/4-6.png)
 
 Different Stresses, 取决于N和traction在形变状态前还是形变状态后
 
-![image](IMAGE/4-7.PNG)
+![image](IMAGE/4-7.png)
 
-![image](IMAGE/4-8.PNG)
+![image](IMAGE/4-8.png)
 
 虽然但是 计算上并没有用这个推导的公式 麻了都
 
-![image](IMAGE/4-9.PNG)
+![image](IMAGE/4-9.png)
 $$
 [\bold b_1\ \bold b_2\ \bold b_3] = 6Vol[\bold X_{10}\ \bold X_{20} \ \bold X_{30}]^{T}\\
 = \frac{1}{det([\bold X_{10}\ \bold X_{20} \ \bold X_{30}]^{-1})}[\bold X_{10}\ \bold X_{20} \ \bold X_{30}]^{T}
 $$
-![image](IMAGE/4-10.PNG)
+![image](IMAGE/4-10.png)
 
 #### Hyperelastic Models
 
@@ -62,11 +62,11 @@ $$
 I=\lambda_0^2+\lambda_1^2+\lambda_2^2,II=\lambda_0^2\lambda_1^2+\lambda_0^2\lambda_2^2+\lambda_1^2\lambda_2^2,III=\lambda_0^4+\lambda_1^4+\lambda_2^4
 $$
 
-<img src="IMAGE/4-12.PNG" alt="IMAGE" style="zoom:67%;" />
+<img src="IMAGE/4-12.png" alt="IMAGE" style="zoom:67%;" />
 
-<img src="IMAGE/4-11.PNG" alt="image" style="zoom:50%;" />
+<img src="IMAGE/4-11.png" alt="image" style="zoom:50%;" />
 
-![IMAGE](IMAGE/4-13.PNG)
+![IMAGE](IMAGE/4-13.png)
 
 ##### Summary
 
@@ -76,8 +76,8 @@ $$
 
 #### 非线性优化
 
-![image](IMAGE/4-14.PNG)
+![image](IMAGE/4-14.png)
 
-![IMAGE](IMAGE/4-15.PNG)
+![IMAGE](IMAGE/4-15.png)
 
-![IMAGE](IMAGE/4-16.PNG)
+![IMAGE](IMAGE/4-16.png)
