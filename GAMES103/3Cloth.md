@@ -32,19 +32,19 @@ $E=\Sigma^n_{e=0}E_e=\Sigma^n_{e=0}(\frac{1}{2}k(||\bold x_i-\bold  x_e||-L_e)^2
 
 ##### 隐式积分：
 
-![image](IMAGE/3-5.PNG)
+![image](IMAGE/3-5.png)
 
 思想：由$f^{[1]}$来求下一状态$x^{[1]}$，由于弹簧系统$f^{1}$与位置线性相关，因此变为求解关于$x^{[1]}$方程
 
-![image](IMAGE/3-6.PNG)
+![image](IMAGE/3-6.png)
 
 求$F(\bold x)$最小值,即梯度=0(一阶导)时情况
 
-![image](IMAGE/3-7.PNG)
+![image](IMAGE/3-7.png)
 
 牛顿法:由泰勒展开得到的一二阶结果,求导=0得到$\Delta x$和结果的关系,由得到的$\Delta x$多次迭代至足够小值得到极小值点
 
-![image](IMAGE/3-8.PNG)
+![image](IMAGE/3-8.png)
 
 Hessian:求二阶导操作,两个矩阵正定,但中间参数有可能为负,因此Hessian可能不正定
 
@@ -54,19 +54,19 @@ Hessian:求二阶导操作,两个矩阵正定,但中间参数有可能为负,因
 
 粗暴解决方法:如果第二项为负就不要 乐
 
-![image](IMAGE/3-10.PNG)
+![image](IMAGE/3-10.png)
 
 ##### Dihedral Angle
 
 二面角模型:产生弯曲的力与角度有关  
 
-![image](IMAGE/3-11.PNG)
+![image](IMAGE/3-11.png)
 
-![IMAGE](IMAGE/3-12.PNG)
+![IMAGE](IMAGE/3-12.png)
 
 ##### Quadratic Bending
 
-![image](IMAGE/3-13.PNG)
+![image](IMAGE/3-13.png)
 
 好处:一阶导和二阶导都很好算
 $$
@@ -81,13 +81,13 @@ $$
 
 ### Position Based Dynamics-PBD
 
-![image](IMAGE/3-14.PNG)
+![image](IMAGE/3-14.png)
 
 要求满足约束并且移动距离尽量少
 
 Gauss-Seidel  多弹簧系统:反复迭代
 
-![image](IMAGE/3-15.PNG)
+![image](IMAGE/3-15.png)
 
 ```
 For k = 0...K
@@ -138,11 +138,11 @@ Spring Strain Limit: 放宽约束条件,限制拉伸
 
 use projection to define a quadratic energy
 
-![image](IMAGE/3-18.PNG)
+![image](IMAGE/3-18.png)
 
-![image](IMAGE/3-19.PNG)
+![image](IMAGE/3-19.png)
 
-![image](IMAGE/3-20.PNG)
+![image](IMAGE/3-20.png)
 
 得到常数矩阵，简化计算量
 
@@ -154,11 +154,11 @@ tips：优化性能主要取决于内存优化，减少变量等等，这就是P
 
 多刚体彼此约束
 
-![image](IMAGE/3-21.PNG)
+![image](IMAGE/3-21.png)
 
 $\lambda$ 引入第二个变量
 
-![image](IMAGE/3-22.PNG)
+![image](IMAGE/3-22.png)
 
 $C=\frac{1}{k} * I$ 因此可以处理刚度极大情况
 
