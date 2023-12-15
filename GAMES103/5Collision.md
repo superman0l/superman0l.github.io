@@ -52,7 +52,7 @@
 
 interior：慢，小步长，但能保证结果正确
 
-<img src="IMAGE/5-8.png" alt="image" style="zoom: 67%;" /><img src="IMAGE/5-9.PNG" alt="IMAGE" style="zoom: 67%;" />
+<img src="IMAGE/5-8.png" alt="image" style="zoom: 67%;" /><img src="IMAGE/5-9.png" alt="IMAGE" style="zoom: 67%;" />
 
 impact：快，可用大步长，但可能不成功
 
