@@ -10,9 +10,9 @@
 ##### Collision Detection
 
 - Broad-Phase Collision Culling 首先排除距离过远情况的碰撞
-  - Spatial Partitioning![image](IMAGE/5-1.PNG)
+  - Spatial Partitioning![image](IMAGE/5-1.png)
   
-    ![mage](IMAGE/5-2.PNG)
+    ![mage](IMAGE/5-2.png)
   
     Morton Code:为了解决行列（三维）的内存访问顺序问题，希望对于相邻格子内存访问位置接近
   
@@ -34,11 +34,11 @@
 
     对于边和三角形做相交检测
 
-    经典问题：速度太快穿过去<img src="IMAGE/5-5.PNG" alt="image" style="zoom: 50%;" />
+    经典问题：速度太快穿过去<img src="IMAGE/5-5.png" alt="image" style="zoom: 50%;" />
 
   - Continuous Collision Detection CCD持续碰撞检测
 
-    ![image](IMAGE/5-6.PNG)
+    ![image](IMAGE/5-6.png)
 
     边和边相交，同样构造四点同面的一元三次方程
 
@@ -48,11 +48,11 @@
 
 ##### Interior Point Method & Impact Zone Optimization
 
-![image](IMAGE/5-7.PNG)
+![image](IMAGE/5-7.png)
 
 interior：慢，小步长，但能保证结果正确
 
-<img src="IMAGE/5-8.PNG" alt="image" style="zoom: 67%;" /><img src="IMAGE/5-9.PNG" alt="IMAGE" style="zoom: 67%;" />
+<img src="IMAGE/5-8.png" alt="image" style="zoom: 67%;" /><img src="IMAGE/5-9.PNG" alt="IMAGE" style="zoom: 67%;" />
 
 impact：快，可用大步长，但可能不成功
 
