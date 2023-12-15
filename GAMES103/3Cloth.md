@@ -26,7 +26,7 @@ $E=\Sigma^n_{e=0}E_e=\Sigma^n_{e=0}(\frac{1}{2}k(||\bold x_i-\bold  x_e||-L_e)^2
 
 计算各个弹簧的力
 
-![image](IMAGE/3-4.PNG)
+![image](IMAGE/3-4.png)
 
 问题：显式积分不稳定，例如overshooting
 
