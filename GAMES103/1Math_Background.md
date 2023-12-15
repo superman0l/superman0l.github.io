@@ -235,8 +235,8 @@ $$
 $$
 example:弹簧计算，利用上述计算结果
 
-![image](IMAGE/1-9.PNG)
+![image](IMAGE/1-9.png)
 
 对于两个点，扩展维度$$R^6$$
 
-![image](IMAGE/1-10.PNG)
+![image](IMAGE/1-10.png)
