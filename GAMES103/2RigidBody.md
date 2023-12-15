@@ -28,7 +28,7 @@ mass $$\bold M$$ and $$\Delta t$$ are depend on user
 
 quaternion表示方法和计算方法，其中$$s$$表示$$w$$，$$\bold v$$ 表示$$[x,y,z]$$
 
-![image](IMAGE\2-3.png)
+![image](IMAGE/2-3.png)
 
 quaternion图解表示，注意norm()=1
 
