@@ -20,11 +20,11 @@ mass $$\bold M$$ and $$\Delta t$$ are depend on user
 
 旋转矩阵具有冗余性 不是所有矩阵都是旋转矩阵 不直观 计算角速度不容易
 
-![image](IMAGE/2-1.PNG)
+![image](IMAGE/2-1.png)
 
 欧拉角万向节死锁问题，特定情况下将会减少一自由度
 
-![image](IMAGE/2-2.PNG)
+![image](IMAGE/2-2.png)
 
 quaternion表示方法和计算方法，其中$$s$$表示$$w$$，$$\bold v$$ 表示$$[x,y,z]$$
 
@@ -32,19 +32,19 @@ quaternion表示方法和计算方法，其中$$s$$表示$$w$$，$$\bold v$$ 表
 
 quaternion图解表示，注意norm()=1
 
-![image](IMAGE/2-4.PNG)
+![image](IMAGE/2-4.png)
 
 角速度图解表示
 
-![image](IMAGE/2-5.PNG)
+![image](IMAGE/2-5.png)
 
 力矩和转动惯量
 
-![image](IMAGE/2-6.PNG)
+![image](IMAGE/2-6.png)
 
 平移和旋转的具体计算,注意quaternion计算后需等于1
 
-![image](IMAGE/2-7.PNG)
+![image](IMAGE/2-7.png)
 
 $$\bold R$$表示陀螺由于之前的状态改变导致的倾斜状态（Quaternion）
 
@@ -65,7 +65,7 @@ $$\bold I_{ref} = \Sigma m_i(\bold r_i^T\bold r_iE-\bold r_i\bold r_i^T)$$
 
 Signed Distance Function SDF
 
-![image](IMAGE/2-9.PNG)
+![image](IMAGE/2-9.png)
 
 碰撞检测：判断内侧外侧，根据几何体不同的面的组合和点到不同的面的距离来判断在内侧/外侧
 
@@ -104,7 +104,7 @@ $$
 
 检测部分：遍历顶点
 
-![image](IMAGE/2-13.PNG)
+![image](IMAGE/2-13.png)
 
 响应部分：
 
@@ -118,23 +118,23 @@ $$
 \begin{bmatrix}0&-r_z&r_y\\r_z&0&-r_x\\-r_y&r_x&0 \end{bmatrix}
 \begin{bmatrix}q_x\\q_y\\q_z\end{bmatrix}=\bold r^*\bold q
 $$
-![image](IMAGE/2-15.PNG)
+![image](IMAGE/2-15.png)
 
 思路：根据impulse方法计算$s_i$顶点的速度变换，之后根据结论算出物体整体受到的冲量，再根据冲量计算整个物体的运动情况
 
-![image](IMAGE/2-16.PNG)
+![image](IMAGE/2-16.png)
 
 ##### Shape Matching
 
 先让每个点自己运动模拟，之后将每个点的结果重新组合成一个刚体
 
-![image](IMAGE/2-17.PNG)
+![image](IMAGE/2-17.png)
 
 $\bold c$是质心，$\bold R$为旋转矩阵 --> 简化将$\bold R$视为一般矩阵$\bold A$ --> 对c求导，由于$\Sigma r_i$是所有质心到点所有长度的集合，因此$\Sigma r_i=0$，得到最后结果。
 
 所以其实就是对于变化后的顶点求个平均值质心
 
-![image](IMAGE/2-18.PNG)
+![image](IMAGE/2-18.png)
 
 然后对A求导，矩阵求导已经忘完了所以直接看结论吧
 
@@ -144,4 +144,4 @@ $\bold A = \bold R \bold  S$的原理推导
 
 shape matching过程
 
-![image](IMAGE/2-20.PNG)
+![image](IMAGE/2-20.png)
