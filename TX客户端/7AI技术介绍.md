@@ -93,7 +93,7 @@ AI目的：
 
 - 创建新蓝图继承自`AIController` 命名为`EnemyController`
 
-- 创建敌人的行为树 命名`BT_Enemy`,在敌人AI控制器蓝图脚本开始时`EventBeginPlay`执行`BT_Enemy`
+- 创建敌人的行为树（AI-行为树） 命名`BT_Enemy`,在敌人AI控制器蓝图脚本开始时`EventBeginPlay`执行`BT_Enemy`（运行行为树）
 
 - 添加Sequence节点和Wait节点 并运行能看到运行执行情况
 
