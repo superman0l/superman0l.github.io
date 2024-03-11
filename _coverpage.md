@@ -8,7 +8,7 @@
 - 但还是凑字数写了
 
 [GitHub](https://github.com/superman0l/superman0l.github.io)
-[Get Started](#这是标题)
+[Get Started](README.md)
 [点了也没用]()
 
 
