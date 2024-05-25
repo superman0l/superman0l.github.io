@@ -7,6 +7,6 @@
 * [Kotlin](Kotlin/)
 * [Android](Android/)
 * [OpenGL](OpenGL/)
-* [UnityShader](UnityShader/)
-* [RayTracing](RayTracing/)
+* [UnityShader](UnityShader/README.md)
+* [RayTracing](RayTracing/README.md)
 
