@@ -9,5 +9,5 @@
 > * [Kotlin](Kotlin/)
 > * [Android](Android/)
 > * [OpenGL](OpenGL/)
-> * [UnityShader](UnityShader/README.md)
-> * [RayTracing](RayTracing/README.md)
+> * [UnityShader](UnityShader/)
+> * [RayTracing](RayTracing/)
